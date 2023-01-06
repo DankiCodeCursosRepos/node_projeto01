@@ -1,5 +1,32 @@
 <html>
+
+<head>
+  <title>
+    Lista de Tarefas com NodeJs e Ejs
+  </title>
+  <link rel="stylesheet" href="/public/style.css" type="text/css">
+
+</head>
+
   <body>
-    <h1>Olá <%= nome %>, sua idade é  <%= idade %></h1>
+    <div class="tarefas">
+
+      <form method="post">
+
+        <input type="text" name="tarefa">
+        <input type="submit" name="acao" value="Inserir">
+
+      </form>
+
+      <% for(let i = 0 ; i < tarefasList.length ; i++) { %>
+
+          <p class="tarefas-item">
+            <%= tarefasList[i] %> | <a href="/deletar/<%= i %>">X</a>
+          </p>
+
+        <%}
+      %>
+
+    </div>
   </body>
 </html>

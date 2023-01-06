@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.tarefas {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+  margin: 10px auto;
+  max-width: 700px;
+}
+
+.tarefas-item {
+  margin-bottom: 10px;
+}
